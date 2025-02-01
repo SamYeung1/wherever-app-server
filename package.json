@@ -1,0 +1,46 @@
+{
+  "name": "whereverapp",
+  "version": "1.0.0",
+  "adonis-version": "4.1.0",
+  "description": "Adonisjs boilerplate for API server with pre-configured JWT",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node ace test"
+  },
+  "keywords": [
+    "adonisjs",
+    "adonis-app"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@adonisjs/ace": "^5.0.8",
+    "@adonisjs/antl": "^2.0.7",
+    "@adonisjs/auth": "^3.0.7",
+    "@adonisjs/bodyparser": "^2.0.5",
+    "@adonisjs/cors": "^1.0.7",
+    "@adonisjs/drive": "^1.0.4",
+    "@adonisjs/fold": "^4.0.9",
+    "@adonisjs/framework": "^5.0.9",
+    "@adonisjs/generic-exceptions": "latest",
+    "@adonisjs/ignitor": "^2.0.8",
+    "@adonisjs/lucid": "^6.1.3",
+    "@adonisjs/mail": "^3.0.9",
+    "@adonisjs/validator": "^5.0.6",
+    "aws-sdk": "^2.422.0",
+    "bson-objectid": "^1.2.4",
+    "exif-parser": "^0.1.12",
+    "generate-password": "^1.4.1",
+    "lodash": "latest",
+    "lucid-mongo": "^3.1.5",
+    "moment": "^2.24.0",
+    "sharp": "^0.29.1",
+    "validator": "^12.0.0"
+  },
+  "devDependencies": {},
+  "autoload": {
+    "App": "./app"
+  }
+}

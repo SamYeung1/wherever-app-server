@@ -1,0 +1,43 @@
+version: "3.9"
+services:
+  wherever:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    networks:
+      - my_network
+    container_name: 'wherever'
+    ports:
+      - "3000:3000"
+    environment:
+      HOST: 0.0.0.0
+      PORT: 3000
+      NODE_ENV: development
+      APP_NAME: Wherever
+      APP_URL: 'http://${HOST}:${PORT}'
+      CACHE_VIEWS: 'false'
+      APP_KEY:
+      DB_CONNECTION: mongodb
+      DB_CONNECTION_STRING:
+      DB_HOST:
+      DB_PORT: 27017
+      DB_USER:
+      DB_PASSWORD:
+      DB_DATABASE: wherever_dev
+      HASH_DRIVER: bcrypt
+      MAIL_CONNECTION: smtp
+      SMTP_HOST: smtp.gmail.com
+      MAIL_USERNAME:
+      MAIL_PASSWORD:
+      SMTP_PORT: 587
+      MAIL_FROM:
+      EMAIL_VERIFICATION_CODE_EXPIRY: 5
+      EMAIL_VERIFICATION_CODE_EXPIRY_TYPE: minutes
+      S3_SECRET:
+      S3_KEY:
+      S3_REGION: us-east-1
+      S3_BUCKET:
+      FEEDBACK_MAIL_TO:
+
+networks:
+  my_network:

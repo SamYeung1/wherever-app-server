@@ -1,0 +1,13 @@
+{
+	"apps":[
+		{
+			"name":"wherever",
+			"script":"./server.js",
+			"env":{
+				"NODE_ENV":"dev"
+			},
+			"instances":1,
+			"exec_mode":"cluster"
+		}
+	]
+}
